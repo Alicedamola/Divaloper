@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-template-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content"
+}
+    
+.grid-item-1 { 
+  grid-area: header;
+  align-self: start;
+  justify-self: center;
+}
+.grid-item-2 { 
+    grid-area: sidebar;
+}
